@@ -14,7 +14,7 @@ state = {
 }
 
 sliceText = (field) => {
- return field.slice(0, 40) + '...';
+        return field.length > 50 ? `${field.slice(0, 50)}...` : field;
  }
 renderItems = (arr) => {
     return arr.map(({id, firstName, lastName, email, phone, description, description2=''}) => {
