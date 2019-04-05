@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+  background-image: linear-gradient(to right, rgb(3, 194, 193), rgb(22, 113, 173));
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #ecf0f1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  /*задаем принудительное наследование для box-sizing*/
+}
+
+#root {
+  margin: 0 auto;
+  width: 90vw;
+  /*background-color: #F5F5F5;
+  */
+  min-height: 100rem;
+}
