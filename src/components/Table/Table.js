@@ -21,13 +21,16 @@ toggleDirectionArrow = (e) => {
   } else {
     e.className = 'fas fa-sort';
   }
+  e.parentNode.parentNode.childNodes.forEach(el => {
+    console.log(el.lastChild);
+    if(el.lastChild !== e ) {
+     return el.lastChild.className = 'fas fa-sort';
+    }
+  })
 }
 
 selectTableItem(e, id) {
   this.props.selectedId(id);
-    /*this.setState(state => ({
-      selectedEl: e.target.parentNode
-    }))*/
   document.querySelectorAll('tr').forEach(el => {
     return el.className = '';
   });
@@ -59,6 +62,7 @@ onFormToggle = () => {
 onSort = (e, col) => {
     this.props.sortColumn(col);
     this.toggleDirectionArrow(e.target);
+
 }
 
 
