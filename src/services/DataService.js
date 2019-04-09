@@ -19,7 +19,12 @@ export default class DataService {
          lastName: tableData.lastName, 
          email: tableData.email, 
          phone: tableData.phone, 
-         description: tableData.description
+         description: tableData.description,
+         description2: tableData.description,
+         streetAddress: tableData.address.streetAddress,
+         city: tableData.address.city,
+         state: tableData.address.state,
+         zip: tableData.address.zip
         }
     }
 }

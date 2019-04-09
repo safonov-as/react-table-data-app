@@ -6,6 +6,7 @@ export default class Header extends Component {
 
     getTableData = () => {
         this.props.getData();
+        this.props.toggleLoader();
     }
 
     render() {
